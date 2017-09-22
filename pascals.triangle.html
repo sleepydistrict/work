@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<div id = 'app'></div>
+  <script> // Psacals Triangles
+function createTriangle(rows) {
+  var pascalsTriangle = [ ];
+  for(i = 1; i <= rows; i++) {
+    var pascalsRow = [ ];
+    for(j = 1; j <= i; j++) {
+    if (j === 1 || j === i){
+      pascalsRow[j-1] = 1;
+      console.log(i, j);
+    }  else {
+      pascalsRow[j-1] = pascalsTriangle[i-2][j-2]
+    }
+    }
+    pascalsTriangle.push(pascalsRow);
+  }
+  return pascalsTriangle;
+}
+createTriangle(100)
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bozeman Route Map</title>
+  </head>
+  <body>
+    <!--key=API_KEY AIzaSyCzEZTbXH7yApgCuoBcMFvR3LoEz-OxrlM-->
+    <iframe width="600" height="450" frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/view?zoom=12&center=45.6770,-111.0429&key=AIzaSyCzEZTbXH7yApgCuoBcMFvR3LoEz-OxrlM" allowfullscreen></iframe>
+
+<div id="map"></div>
+
+<script>
+
+function init() {
+  var mapOptions =  {    //set up the map Options
+    center: new google.maps,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+    zoom: 13
+  };
+  var venueMap;               //Map() draws a map
+  venueMap = new google.maps.Map(document.getElementById('map'), mapOptions),
+
+function loadScript() {
+  var script = document.createElement('script');  // Creat script else
+  script.src = 'http://maps.googleapis.com/maps/api/js?
+  sensor=false&callback=init';
+  document.body.appendChild(script);   //Add ele to page
+}
+
+window.onload =loadScript;  //Onload call
+
+</script>
+  </body>
+</html>

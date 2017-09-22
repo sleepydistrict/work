@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en
+
+<head>
+<style>
+img.align-center {
+  display: block;
+  margin: 0px auto
+}
+img.medium {
+  width: 250px;
+  height: 250px;
+}
+</style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Dawn Design/Build</title>
+</head>
+
+<body>
+<!-- I want to add a background img to the h1 -->
+<!-- https://www.facebook.com/photo.php?fbid=3409722779860&l=d1f6909eba
+  photo for top of page -->
+<h1 style= "color: #cebb9e; font-size: 50px; font-family: monospace, sans-serif font-weight: light" align= "center">New Dawn Design/Build</h1>
+<h2 style= "color: DarkCyan" align= "center">Welcome. I am Heidi Roders M. Arch.</h2>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10204120609413509%26set%3Da.1118485300355.13710.1773694370%26type%3D3&width=500" width="500" height="588" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+<script>
+var hourNow = today.getHours();
+var greeting;
+
+<!--display appropriate greeting bsed on current time.-->
+if (hourNow > 18) {
+  greeting = 'Good Evening';
+} else if (hourNow > 12) {
+  greeting = 'Good Afternoon';
+} else if (hourNow > 0) {
+  greeting = 'Good Morning';
+} else {
+  greeting = 'Welcome';
+}
+
+document.write(greeting);
+
+</script>
+  </body>
+</html>
