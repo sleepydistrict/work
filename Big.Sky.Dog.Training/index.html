@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+  <style type="text/css">
+    h1,
+    section,
+    footer,
+    aside,
+    nav,
+    article,
+    figure,
+    figcaption {
+      display: block;
+    }
+
+    body {
+      color: #666666;
+      background-color: #f9f8f6;
+      background-image: url("images/dark-wood.jpg");
+      background-position: center;
+      font-family: Georgia, Times, serif;
+      line-height: 1.4em;
+      margin: 0px;
+    }
+
+    .wrapper {
+      width: 940px;
+      margin: 20px auto 20px auto;
+      border: 2px solid #000000;
+      background-color: #efefef;
+    }
+
+    header {
+      height: 160px;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #de6581;
+      text-align: center;
+    }
+
+    nav,
+    footer {
+      clear: both;
+      color: #ffffff;
+      background-color: #aeaca8;
+      height: 30px;
+    }
+
+    nav ul {
+      margin: 0px;
+      padding: 5px 0px 5px 30px;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 40px;
+    }
+
+    nav li a {
+      color: #ffffff;
+    }
+
+    nav li a:hover,
+    nav li a.current {
+      color: #000000;
+    }
+
+    section.courses {
+      float: left;
+      width: 659px;
+      border-right: 1px solid #eeeeee;
+    }
+
+    article {
+      clear: both;
+      overflow: auto;
+      width: 100%;
+    }
+
+    hgroup {
+      margin-top: 40px;
+    }
+
+    figure {
+      float: left;
+      width: 290px;
+      height: 220px;
+      padding: 5px;
+      margin: 20px;
+      border: 1px solid #eeeeee;
+    }
+
+    figcaption {
+      font-size: 90%;
+      text-align: left;
+    }
+
+    aside {
+      width: 230px;
+      float: left;
+      padding: 0px 0px 0px 20px;
+    }
+
+    aside section a {
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    aside section a:hover {
+      color: #985d6a;
+      background-color: #efefef;
+    }
+
+    a {
+      color: #de6581;
+      text-decoration: none;
+    }
+
+    h2,
+    h3 {
+      font-weight: normal;
+    }
+
+    h2 {
+      margin: 10px 0px 5px 0px;
+      padding: 0px;
+    }
+
+    h3 {
+      margin: 0px 0px 10px 0px;
+      color: #de6581;
+    }
+
+    aside h2 {
+      padding: 30px 0px 10px 0px;
+      color: #de6581;
+    }
+
+    footer {
+      font-size: 80%;
+      padding: 7px 0px 0px 20px;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Big Sky Dog Training</title>
+</head>
+
+<body>
+  </head>
+
+  <body>
+    <div class="conatiner fluid">
+      <div class="wrapper">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="" class="current">home</a></li>
+              <li><a href="">classes</a></li>
+              <!--<li><a href="">blog</a></li>-->
+              <li><a href="">about</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+          </nav>
+          <h1>Big Sky Dog Training</h1>
+        </header>
+        <section class="courses">
+          <article>
+            <figure>
+              <img src="images/bok-choi.jpg" alt="German shepard and baby" />
+              <figcaption>Lutzen and Freyja in Dog Food</figcaption>
+            </figure>
+            <hgroup>
+              <h2>Puppy I</h2>
+              <h3>Four Week Course</h3>
+            </hgroup>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p>
+          </article>
+          <article>
+            <figure>
+              <img src="images/teriyaki.jpg" alt="German shepard and baby" />
+              <figcaption>Freyja Climbing on Lutzen</figcaption>
+            </figure>
+            <hgroup>
+              <h2>Puppy II</h2>
+              <h3>Four Week Course</h3>
+            </hgroup>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p>
+          </article>
+          <article>
+            <figure>
+              <img src="images/bok-choi.jpg" alt="Dogs and Advance Training Tools" />
+              <figcaption>Imterdiate Learning Tools</figcaption>
+            </figure>
+            <hgroup>
+              <h2>Intermidate</h2>
+              <h3>Four Week Course</h3>
+            </hgroup>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p>
+          </article>
+          <article>
+            <figure>
+              <img src="images/bok-choi.jpg" alt="Lutzen at Work" />
+              <figcaption>Lutzen On The Job For Big Sky Resort</figcaption>
+            </figure>
+            <hgroup>
+              <h2>Avalanche Training</h2>
+              <h3>Seven to Eight Week Course</h3>
+            </hgroup>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p>
+          </article>
+        </section>
+        <aside>
+          <h2>Register Online</h2>
+          <form class="ui form">
+            <div class="field">
+              <label>Owner's Name</label>
+              <input type="text" name="pet-owner-name" placeholder="Owner's Name">
+            </div>
+            <div class="field">
+              <label>Your Pets Name</label>
+              <input type="text" name="pet-name" placeholder="Your Pets Name">
+            </div>
+            <div class="field">
+              <label>Email Address</label>
+              <input type="text" name="email-address" placeholder="Enter Your Email Address">
+            </div>
+            <div class="field">
+              <label>Phone Number</label>
+              <input type="text" name="phone-number" placeholder="   -   -    ">
+            </div>
+            <div class="field">
+              <label>Choose Your Class</label>
+              <div class="ui selection dropdown">
+                <input type="hidden" name="class-names">
+                <i class="dropdown icon"></i>
+                <div class="default text">Classes</div>
+                <div class="menu">
+                  <div class="item" data-value="4">Puppy I 4 Weeks $120</div>
+                  <div class="item" data-value="3">Puppy II 4 Weeks $120</div>
+                  <div class="item" data-value="2">Intermidiate 4 Weeks $120</div>
+                  <div class="item" data-value="1">Avalanch Training 8 Weeks $195</div>
+                  <div class="item" data-value="0">Private 4 Weeks</div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree to the Terms and Conditions</label>
+              </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+          </form>
+          <section class="contact-details">
+            <h2>Contact</h2>
+            <p>Big Sky K-9 LLC<br /> P.O. Box 160371<br /> Big Sky, MT<br /> 59716
+            </p>
+            <div class="ui form">
+                <div class="field">
+                  <label>Email</label>
+                  <input type="email" placeholder="Enter Your Email Address">                  
+                  <textarea></textarea>
+                  <a href="mailto:@gmail.com"></a><button class="ui button">
+                      Send
+                    </button>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+            
+          </section>
+        </aside>
+        <footer>
+          &copy; 2017 Big Sky K-9 LLC
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+
+  </body>
+
+</html>
